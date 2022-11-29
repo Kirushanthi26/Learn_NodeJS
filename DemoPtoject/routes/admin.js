@@ -8,7 +8,8 @@ router.get("/add-product",(req, res, next)=>{
 })
 
 router.post("/add-product",(req, res, next)=>{
-    res.send("<h1>form output</h1>")
+    console.log(req.body);
+    res.redirect('/');
 })
 
 module.exports = router
