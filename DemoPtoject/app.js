@@ -6,6 +6,8 @@ const app = express();
 const shopRoute = require('./routes/shop.js');
 const adminRoute = require('./routes/admin.js');
 
+app.use(express.static(path.join(__dirname, 'public')))
+
 app.use(adminRoute);
 app.use(shopRoute);
 
